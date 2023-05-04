@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "illuminate/support": "^10.0"
     },
     "require-dev": {
         "laravel/pint": "^1.10",
@@ -38,7 +39,13 @@
             "@test:lint"
         ]
     },
-    "extra": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RedExplosion\\SkeletonLaravel\\SkeletonServiceProvider"
+            ]
+        }
+    },
     "config": {
         "sort-packages": true
     },
