@@ -11,7 +11,7 @@
 
 # exclude local testing files
 .phpunit.cache
-phpunit.xml.dist
+phpunit.xml
 
 # exclude because with package development it doesnt matter and reduces unnecessary merge conflicts
 composer.lock
