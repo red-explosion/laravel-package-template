@@ -14,8 +14,13 @@
             "email": "ben@sherred.co.uk"
         }
     ],
-    "require": {},
-    "require-dev": {},
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.10",
+        "red-explosion/pint-config": "^1.1"
+    },
     "autoload": {
         "psr-4": {
             "RedExplosion\\SkeletonLaravel\\": "src/"
@@ -23,10 +28,16 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "RedExplosion\\SkeletonLaravel\\Tests": "tests/"
+            "RedExplosion\\SkeletonLaravel\\Tests\\": "tests/"
         }
     },
-    "scripts": {},
+    "scripts": {
+        "lint": "./vendor/bin/pint --config vendor/red-explosion/pint-config/pint.json",
+        "test:lint": "./vendor/bin/pint --config vendor/red-explosion/pint-config/pint.json --test",
+        "test": [
+            "@test:lint"
+        ]
+    },
     "extra": {},
     "config": {
         "sort-packages": true
