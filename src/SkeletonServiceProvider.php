@@ -21,9 +21,9 @@ final class SkeletonServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->publishes(
                 paths: [
-                    __DIR__ . '/../config/skeleton.php',
+                    __DIR__ . '/../config/skeleton.php' => config_path('skeleton.php'),
                 ],
-                groups: 'skeleton',
+                groups: 'skeleton-config',
             );
         }
     }
