@@ -1,0 +1,35 @@
+name: static analysis
+
+on:
+    push:
+        branches: [ main ]
+    pull_request:
+
+permissions:
+    contents: read
+
+jobs:
+    phpstan:
+        runs-on: ubuntu-latest
+
+        strategy:
+            fail-fast: true
+
+        name: Static Analysis
+
+        steps:
+            - name: Checkout the code
+              uses: actions/checkout@v3
+
+            - name: Setup PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: 8.2
+                  coverage: none
+
+            - name: Install the dependencies
+              run: |
+                  composer update --no-progress --prefer-dist --no-interaction
+
+            - name: Execute type checking
+              run: vendor/bin/phpstan analyse

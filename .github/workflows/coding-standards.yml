@@ -1,0 +1,35 @@
+name: coding standards
+
+on:
+    push:
+        branches: [ main ]
+    pull_request:
+
+permissions:
+    contents: read
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+
+        strategy:
+            fail-fast: true
+
+        name: Coding Standards
+
+        steps:
+            - name: Checkout the code
+              uses: actions/checkout@v3
+
+            - name: Setup PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: 8.2
+                  coverage: none
+
+            - name: Install the dependencies
+              run: |
+                  composer update --no-progress --prefer-dist --no-interaction
+
+            - name: Execute Laravel Pint
+              run: ./vendor/bin/pint --config vendor/red-explosion/pint-config/pint.json --test
