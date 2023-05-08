@@ -6,6 +6,15 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/red-explpsion/:package_slug/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/red-explpsion/:package_slug/actions/workflows/tests.yaml?query=branch:main)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/red-explpsion/:package_slug/coding-standards.yml?label=code%20style&style=flat-square)](https://github.com/red-explpsion/:package_slug/actions/workflows/coding-standards.yml?query=branch:main)
 [![Total Downloads](https://img.shields.io/packagist/dt/red-explpsion/:package_slug.svg?style=flat-square)](https://packagist.org/packages/red-explpsion/:package_slug)
+<!--delete-->
+---
+This repo can be used to scaffold a Red Explosion Laravel package. Follow these steps to get started:
+
+1. Press the "Use this template" button at the top of this repo to create a new repo with the contents of this skeleton.
+2. Run "php ./configure.php" to run a script that will replace all placeholders throughout all the files.
+---
+<!--/delete-->
+This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
 ## Installation
 
