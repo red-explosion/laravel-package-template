@@ -2,17 +2,17 @@
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/:vendor_slug/:package_slug/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/:vendor_slug/:package_slug/actions/workflows/tests.yaml?query=branch:main)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/:vendor_slug/:package_slug/coding-standards.yml?label=code%20style&style=flat-square)](https://github.com/:vendor_slug/:package_slug/actions/workflows/coding-standards.yml?query=branch:main)
-[![Total Downloads](https://img.shields.io/packagist/dt/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/red-explpsion/:package_slug.svg?style=flat-square)](https://packagist.org/packages/red-explpsion/:package_slug)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/red-explpsion/:package_slug/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/red-explpsion/:package_slug/actions/workflows/tests.yaml?query=branch:main)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/red-explpsion/:package_slug/coding-standards.yml?label=code%20style&style=flat-square)](https://github.com/red-explpsion/:package_slug/actions/workflows/coding-standards.yml?query=branch:main)
+[![Total Downloads](https://img.shields.io/packagist/dt/red-explpsion/:package_slug.svg?style=flat-square)](https://packagist.org/packages/red-explpsion/:package_slug)
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require :vendor_slug/:package_slug
+composer require red-explpsion/:package_slug
 ```
 
 You can publish and run the migrations with:
@@ -37,8 +37,8 @@ php artisan vendor:publish --tag=":package_slug-views"
 ## Usage
 
 ```php
-$variable = new VendorName\Skeleton();
-echo $variable->echoPhrase('Hello, VendorName!');
+$variable = new RedExplosion\Skeleton();
+echo $variable->echoPhrase('Hello, RedExplosion!');
 ```
 
 ## Testing

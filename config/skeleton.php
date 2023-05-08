@@ -2,5 +2,5 @@
 
 declare(strict_types=1);
 
-// Config for VendorName/Skeleton
+// Config for :package_slug
 return [];
