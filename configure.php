@@ -83,12 +83,12 @@ function determineSeparator(string $path): string
 
 function replaceForWindows(): array
 {
-    return preg_split('/\\r\\n|\\r|\\n/', run('dir /S /B * | findstr /v /i .git\ | findstr /v /i vendor | findstr /v /i '.basename(__FILE__).' | findstr /r /i /M /F:/ ":author :vendor :package VendorName skeleton migration_table_name vendor_name vendor_slug author@domain.com"'));
+    return preg_split('/\\r\\n|\\r|\\n/', run('dir /S /B * | findstr /v /i .git\ | findstr /v /i vendor | findstr /v /i '.basename(__FILE__).' | findstr /r /i /M /F:/ ":author_name :author_username author@domain.com :package_name :package_slug Skeleton skeleton :package_description"'));
 }
 
 function replaceForAllOtherOSes(): array
 {
-    return explode(PHP_EOL, run('grep -E -r -l -i ":author|:vendor|:package|VendorName|skeleton|migration_table_name|vendor_name|vendor_slug|author@domain.com" --exclude-dir=vendor ./* ./.github/* | grep -v '.basename(__FILE__)));
+    return explode(PHP_EOL, run('grep -E -r -l -i ":author_name|:author_username|author@domain.com|:package_name|:package_slug|Skeleton|skeleton|:package_description" --exclude-dir=vendor ./* ./.github/* | grep -v '.basename(__FILE__)));
 }
 
 $gitName = run('git config user.name');
