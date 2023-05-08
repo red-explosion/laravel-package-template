@@ -1,4 +1,4 @@
-# Package
+# :package_name
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
@@ -7,7 +7,6 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/:vendor_slug/:package_slug/coding-standards.yml?label=code%20style&style=flat-square)](https://github.com/:vendor_slug/:package_slug/actions/workflows/coding-standards.yml?query=branch:main)
 [![Total Downloads](https://img.shields.io/packagist/dt/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
 
-https://img.shields.io/github/actions/workflow/status/redexplosion/skeleton-laravel/tests
 ## Installation
 
 You can install the package via composer:
@@ -27,13 +26,6 @@ You can publish the config file with:
 
 ```bash
 php artisan vendor:publish --tag=":package_slug-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
 ```
 
 Optionally, you can publish the views using
