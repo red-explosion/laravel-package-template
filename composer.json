@@ -1,6 +1,6 @@
 {
     "name": "red-explosion/skeleton-laravel",
-    "description": "A skeleton for building Laravel packages.",
+    "description": "A skeleton for building Red Explosion Laravel packages.",
     "license": "MIT",
     "homepage": "https://github.com/red-explosion",
     "type": "library",
