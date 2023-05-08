@@ -1,17 +1,18 @@
 {
-    "name": "red-explosion/skeleton-laravel",
-    "description": "A skeleton for building Red Explosion Laravel packages.",
+    "name": "red-explosion/package_slug",
+    "description": ":package_description",
     "license": "MIT",
-    "homepage": "https://github.com/red-explosion",
+    "homepage": "https://github.com/red-explosion/:package_slug",
     "type": "library",
     "keywords": [
         "red-explosion",
-        "laravel"
+        "laravel",
+        ":package_slug"
     ],
     "authors": [
         {
-            "name": "Ben Sherred",
-            "email": "ben@sherred.co.uk"
+            "name": ":author_name",
+            "email": "author@domain.com"
         }
     ],
     "require": {
@@ -29,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RedExplosion\\SkeletonLaravel\\": "src/"
+            "RedExplosion\\Skeleton\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RedExplosion\\SkeletonLaravel\\Tests\\": "tests/"
+            "RedExplosion\\Skeleton\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -51,7 +52,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "RedExplosion\\SkeletonLaravel\\SkeletonServiceProvider"
+                "RedExplosion\\Skeleton\\SkeletonServiceProvider"
             ]
         }
     },

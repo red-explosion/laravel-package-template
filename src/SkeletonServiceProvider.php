@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace RedExplosion\SkeletonLaravel;
+namespace RedExplosion\Skeleton;
 
 use Illuminate\Support\ServiceProvider;
 

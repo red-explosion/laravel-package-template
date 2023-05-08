@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace RedExplosion\SkeletonLaravel\Tests;
+namespace RedExplosion\Skeleton\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use RedExplosion\SkeletonLaravel\SkeletonServiceProvider;
+use RedExplosion\Skeleton\SkeletonServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
