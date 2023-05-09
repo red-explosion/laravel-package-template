@@ -1,5 +1,5 @@
 {
-    "name": "red-explosion/package_slug",
+    "name": "red-explosion/:package_slug",
     "description": ":package_description",
     "license": "MIT",
     "homepage": "https://github.com/red-explosion/:package_slug",
