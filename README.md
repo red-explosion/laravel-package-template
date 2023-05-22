@@ -1,9 +1,9 @@
 # :package_name
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/red-explpsion/:package_slug.svg?style=flat-square)](https://packagist.org/packages/red-explpsion/:package_slug)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/red-explpsion/:package_slug/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/red-explpsion/:package_slug/actions/workflows/tests.yaml?query=branch:main)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/red-explpsion/:package_slug/coding-standards.yml?label=code%20style&style=flat-square)](https://github.com/red-explpsion/:package_slug/actions/workflows/coding-standards.yml?query=branch:main)
-[![Total Downloads](https://img.shields.io/packagist/dt/red-explpsion/:package_slug.svg?style=flat-square)](https://packagist.org/packages/red-explpsion/:package_slug)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/red-explosion/:package_slug.svg?style=flat-square)](https://packagist.org/packages/red-explosion/:package_slug)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/red-explosion/:package_slug/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/red-explosion/:package_slug/actions/workflows/tests.yaml?query=branch:main)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/red-explosion/:package_slug/coding-standards.yml?label=code%20style&style=flat-square)](https://github.com/red-explosion/:package_slug/actions/workflows/coding-standards.yml?query=branch:main)
+[![Total Downloads](https://img.shields.io/packagist/dt/red-explosion/:package_slug.svg?style=flat-square)](https://packagist.org/packages/red-explosion/:package_slug)
 <!--delete-->
 ---
 This repo can be used to scaffold a Red Explosion Laravel package. Follow these steps to get started:
@@ -19,7 +19,7 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 You can install the package via composer:
 
 ```bash
-composer require red-explpsion/:package_slug
+composer require red-explosion/:package_slug
 ```
 
 You can publish and run the migrations with:
