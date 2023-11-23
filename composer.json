@@ -12,7 +12,7 @@
     "authors": [
         {
             "name": ":author_name",
-            "email": "author@domain.com"
+            "email": ":author_email"
         }
     ],
     "require": {
