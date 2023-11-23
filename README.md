@@ -9,7 +9,6 @@
 This repo can be used to scaffold a Red Explosion Laravel package. Follow these steps to get started:
 
 1. Press the "Use this template" button at the top of this repo to create a new repo with the contents of this skeleton.
-2. Run "php ./configure.php" to run a script that will replace all placeholders throughout all the files.
 ---
 <!--/delete-->
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
@@ -25,20 +24,20 @@ composer require red-explosion/package_slug
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag=":skeleton-migrations"
+php artisan vendor:publish --tag="skeleton-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag=":skeleton-config"
+php artisan vendor:publish --tag="skeleton-config"
 ```
 
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag=":skeleton-views"
+php artisan vendor:publish --tag="skeleton-views"
 ```
 
 ## Usage
