@@ -10,32 +10,33 @@ permissions:
 
 jobs:
     lint:
-        runs-on: ubuntu-latest
-
-        strategy:
-            fail-fast: true
-
         name: Coding Standards
+        runs-on: ubuntu-latest
+        if: "!contains(github.event.head_commit.message, '[ci skip]')"
 
         steps:
             - name: Checkout the code
               uses: actions/checkout@v4
 
-            - name: Cache dependencies
+            - name: Get composer cache directory path
+              id: composercache
+              run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+
+            - name: Cache composer
               uses: actions/cache@v3
               with:
-                  path: ~/.composer/cache/files
-                  key: dependencies-php-${{ matrix.php }}-composer-${{ hashFiles('composer.json') }}
+                path: ${{ steps.composercache.outputs.dir }}
+                key: dependencies-composer-${{ hashFiles('composer.json') }}
 
             - name: Setup PHP
               uses: shivammathur/setup-php@v2
               with:
-                  php-version: 8.2
-                  coverage: none
+                php-version: 8.2
+                tools: composer:v2
+                coverage: none
 
-            - name: Install the dependencies
-              run: |
-                  composer update --no-progress --prefer-dist --no-interaction
+            - name: Install dependencies
+              run: composer update --prefer-dist --no-interaction --no-progress
 
-            - name: Execute Laravel Pint
+            - name: Run Laravel Pint
               run: ./vendor/bin/pint --config vendor/red-explosion/pint-config/pint.json --test
