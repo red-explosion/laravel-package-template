@@ -5,7 +5,7 @@ function files(): array
 {
     $files = explode(
         separator: PHP_EOL,
-        string: run(command: 'grep -E -r -l -i "package_name|package_slug|package_description|author_name|author_username|author_email|skeleton|Skeleton" --exclude-dir=vendor ./* ./.github/* | grep -v '.  basename(path: __FILE__))
+        string: run(command: 'grep -E -r -l -i "package_name|package_slug|package_description|author_name|author_username|author@email.com|skeleton|Skeleton" --exclude-dir=vendor ./* ./.github/* | grep -v '.  basename(path: __FILE__))
     );
 
     $files[] = './config/skeleton.php';
@@ -75,7 +75,7 @@ foreach (files() as $file) {
         'package_description' => $packageDescription,
         'author_name' => $authorName,
         'author_username' => $authorUsername,
-        'author_email' => $authorEmail,
+        'author@email.com' => $authorEmail,
         'skeleton' => $packageSlugWithoutPrefix,
         'Skeleton' => $className,
     ]);
