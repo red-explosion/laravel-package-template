@@ -25,27 +25,27 @@ composer require red-explosion/:package_slug
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-migrations"
+php artisan vendor:publish --tag=":skeleton-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-config"
+php artisan vendor:publish --tag=":skeleton-config"
 ```
 
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-views"
+php artisan vendor:publish --tag=":skeleton-views"
 ```
 
 ## Usage
 
 ```php
 $variable = new RedExplosion\Skeleton();
-echo $variable->echoPhrase('Hello, RedExplosion!');
+echo $variable->echoPhrase('Hello, Red Explosion!');
 ```
 
 ## Testing

@@ -70,7 +70,7 @@ $authorUsername = $argv[3];
 $packageName = packageName($argv[4]);
 $packageSlug = $argv[4];
 $packageSlugWithoutPrefix = removePrefix(prefix: 'laravel-', content: $packageSlug);
-$className = titleCase($packageSlug);
+$className = removePrefix(prefix: 'Laravel', content: titleCase($packageSlug));
 $description = $argv[5] !== '' ? $argv[5] : 'A skeleton for building Red Explosion Laravel packages.';
 
 $currentDirectory = (string) getcwd();
@@ -86,7 +86,7 @@ foreach ($files as $file) {
         ':package_name' => $packageName,
         ':package_slug' => $packageSlug,
         'Skeleton' => $className,
-        'skeleton' => $packageSlug,
+        'skeleton' => $packageSlugWithoutPrefix,
         ':package_description' => $description,
     ]);
 
