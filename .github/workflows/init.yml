@@ -34,7 +34,7 @@ jobs:
             - name: Delete init files
               run: |
                   rm .github/workflows/init.yml
-                  rm init.yml
+                  rm init.php
 
             - name: Apply changes
               uses: stefanzweifel/git-auto-commit-action@v4
