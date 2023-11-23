@@ -1,18 +1,18 @@
 {
-    "name": "red-explosion/:package_slug",
-    "description": ":package_description",
+    "name": "red-explosion/package_slug",
+    "description": "package_description",
     "license": "MIT",
-    "homepage": "https://github.com/red-explosion/:package_slug",
+    "homepage": "https://github.com/red-explosion/package_slug",
     "type": "library",
     "keywords": [
         "red-explosion",
         "laravel",
-        ":package_slug"
+        "package_slug"
     ],
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email"
+            "name": "author_name",
+            "email": "author_email"
         }
     ],
     "require": {
@@ -41,7 +41,7 @@
     "scripts": {
         "lint": "./vendor/bin/pint --config vendor/red-explosion/pint-config/pint.json",
         "test:lint": "./vendor/bin/pint --config vendor/red-explosion/pint-config/pint.json --test",
-        "test:types": "phpstan analyse --ansi",
+        "test:types": "./vendor/bin/phpstan analyse --ansi",
         "test:unit": "./vendor/bin/pest --compact --colors=always",
         "test": [
             "@test:lint",
