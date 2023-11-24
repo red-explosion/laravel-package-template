@@ -1,7 +1,7 @@
 # package_name
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/red-explosion/package_slug.svg?style=flat-square)](https://packagist.org/packages/red-explosion/package_slug)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/red-explosion/package_slug/tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/red-explosion/package_slug/actions/workflows/tests.yaml?query=branch:main)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/red-explosion/package_slug/tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/red-explosion/package_slug/actions/workflows/tests.yml?query=branch:main)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/red-explosion/package_slug/coding-standards.yml?label=code%20style&style=flat-square)](https://github.com/red-explosion/package_slug/actions/workflows/coding-standards.yml?query=branch:main)
 [![Total Downloads](https://img.shields.io/packagist/dt/red-explosion/package_slug.svg?style=flat-square)](https://packagist.org/packages/red-explosion/package_slug)
 <!--delete-->
