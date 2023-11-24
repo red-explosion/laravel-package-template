@@ -68,9 +68,9 @@ vulnerabilities will be promptly addressed.
 
 ## Credits
 
-- [:author_name](https://github.com/:author_username)
+- [author_name](https://github.com/author_username)
 - [All Contributors](../../contributors)
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+package_name is open-sourced software licensed under the [MIT license](LICENSE.md).
