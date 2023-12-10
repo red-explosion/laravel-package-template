@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
 
         # Only run this job when a repository has been created from the template, and it's an initial push (first commit)
-        if: github.repository != 'red-explosion/laravel-package-skeleton' && github.run_number == 1 && github.event.base_ref == null
+        if: github.repository != 'red-explosion/laravel-package-template' && github.run_number == 1 && github.event.base_ref == null
 
         steps:
             - name: Checkout the code
