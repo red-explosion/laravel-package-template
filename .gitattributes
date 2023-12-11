@@ -12,5 +12,4 @@ phpstan.neon.dist  export-ignore
 phpunit.xml.dist   export-ignore
 CONTRIBUTING.md    export-ignore
 CHANGELOG.md       export-ignore
-CONTRIBUTING.md    export-ignore
 README.md          export-ignore
